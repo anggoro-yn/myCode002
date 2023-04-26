@@ -44,5 +44,5 @@ import numpy as np
 # defining random values in a dataframe using pandas and numpy
 df = pd.DataFrame(
 np.random.randn(20, 5),
-columns=('col_no %d' % i for i in range(10)))
+columns=('col_no %d' % i for i in range(5)))
 st.dataframe(df)
