@@ -61,4 +61,6 @@ columns=('col_no %d' % i for i in range(5)))
 # defining data in table
 st.table(df)
 
+# Defining Metrics
+st.metric(label="Temperature", value="31 °C", delta="1.2 °C")
 
