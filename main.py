@@ -3,7 +3,7 @@ import streamlit as st
 
 #MARKDOWN
 #Displaying Markdown
-st.markdown("# Beginner's Guide to Streamlit with Python")
+st.markdown("# Beginner's Guide to Streamlit\nwith Python")
 st.markdown('## Welcome to')
 st.markdown("""### Streamlit's World""")
 
