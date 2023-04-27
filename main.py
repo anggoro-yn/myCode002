@@ -82,8 +82,7 @@ st.metric("Trees", "91456", "-1132649")
 
 # JSON
 # Defining Nested JSON
-st.json
-(
+st.json(
 { "Books" :
 [{
 "BookName" : "Python Testing with Selenium",
