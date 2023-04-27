@@ -80,5 +80,16 @@ c3.metric(label="Customers", value=100, delta=10, delta_color="off")
 st.metric(label="Speed", value=None, delta=0)
 st.metric("Trees", "91456", "-1132649")
 
+st.markdown(
+    """
+    <style>
+        .container {
+            background-color: #f0f0f0;
+        }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 container = st.container()
-container.write('This is some text in a container.')
+container.write('This is some text in a container with a gray background.')
