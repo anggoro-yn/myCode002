@@ -79,3 +79,29 @@ c2.metric(label="Population", value="123 Billions", delta="1 Billions", delta_co
 c3.metric(label="Customers", value=100, delta=10, delta_color="off")
 st.metric(label="Speed", value=None, delta=0)
 st.metric("Trees", "91456", "-1132649")
+
+# JSON
+#Defining Nested JSON
+st.json
+(
+{ "Books" :
+Chapter 2 Ttext and table elements
+37
+[{
+"BookName" : "Python Testing with Selenium",
+"BookID" : "1",
+"Publisher" : "Apress",
+"Year" : "2021",
+"Edition" : "First",
+"Language" : "Python",
+},
+{
+"BookName": "Beginners Guide to Streamlit with Python",
+"BookID" : "2",
+"Publisher" : "Apress",
+"Year" : "2022",
+"Edition" : "First",
+"Language" : "Python"
+}]
+}
+)
