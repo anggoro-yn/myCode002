@@ -85,8 +85,6 @@ st.metric("Trees", "91456", "-1132649")
 st.json
 (
 { "Books" :
-Chapter 2 Ttext and table elements
-37
 [{
 "BookName" : "Python Testing with Selenium",
 "BookID" : "1",
