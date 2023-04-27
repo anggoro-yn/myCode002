@@ -1,11 +1,13 @@
 #Import Streamlit library
 import streamlit as st
 
+#MARKDOWN
 #Displaying Markdown
 st.markdown("# Hi,\n# ***People*** \t!!!!!!!!!")
 st.markdown('## Welcome to')
 st.markdown("""### Streamlit's World""")
 
+# LATEX
 #Displaying Latex
 st.latex(r'''cos2\theta = 1 - 2sin^2\theta''')
 st.latex("""(a+b)^2 = a^2 + b^2 + 2ab""")
@@ -14,6 +16,7 @@ st.latex(r'''\frac{\partial u}{\partial t}
 + \frac{\partial^2 u}{\partial y^2}
 + \frac{\partial^2 u}{\partial z^2} \right)''')
 
+# CODE
 # Displaying Python Code
 st.subheader("""Python Code""")
 code = '''def hello():
@@ -38,6 +41,7 @@ document.getElementById("demo").innerHTML = err.message;
 }
 </script> """)
 
+# DATAFRAME
 # Import Necessary libraries
 import pandas as pd
 import numpy as np
@@ -54,6 +58,7 @@ columns=('col_no %d' % i for i in range(5)))
 # Highlighting minimum value objects
 st.dataframe(df.style.highlight_max(axis=1,color='red').highlight_min(axis=1))
 
+# TABLE
 # defining random values in a dataframe using pandas and numpy
 df = pd.DataFrame(
 np.random.randn(20, 5),
@@ -61,6 +66,16 @@ columns=('col_no %d' % i for i in range(5)))
 # defining data in table
 st.table(df)
 
+
+# METRICS
 # Defining Metrics
 st.metric(label="Temperature", value="31 °C", delta="1.2 °C")
 
+#Defining Columns
+c1, c2, c3 = st.columns(3)
+# Defining Metrics
+c1.metric("Rainfall", "100 cm", "10 cm")
+c2.metric(label="Population", value="123 Billions", delta="1 Billions", delta_color="inverse")
+c3.metric(label="Customers", value=100, delta=10, delta_color="off")
+st.metric(label="Speed", value=None, delta=0)
+st.metric("Trees", "91456", "-1132649")
