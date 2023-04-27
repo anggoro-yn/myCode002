@@ -52,4 +52,4 @@ df = pd.DataFrame(
 np.random.randn(20, 5),
 columns=('col_no %d' % i for i in range(5)))
 # Highlighting minimum value objects
-st.dataframe(df.style.highlight_min(axis=0))
+st.dataframe(df.style.highlight_min(axis=1))
